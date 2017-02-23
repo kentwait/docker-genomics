@@ -1,5 +1,5 @@
 # kentwait/gatk
-FROM kentwait/alpine-oraclejdk8
+FROM kentwait/alpine-oraclejdk8-base
 MAINTAINER Kent Kawashima <kentkawashima@gmail.com>
 
 # Modified from https://github.com/alexcoppe/bio-dockers/blob/master/gatk/Dockerfile
