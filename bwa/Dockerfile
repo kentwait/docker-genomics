@@ -6,7 +6,8 @@ ENV BWA_VERSION 0.7.15
 ADD "https://downloads.sourceforge.net/project/bio-bwa/bwa-${BWA_VERSION}.tar.bz2" /tmp/
 
 WORKDIR /tmp
-RUN apk add --no-cache --virtual temp-pkgs \
+RUN apk update && apk upgrade \
+  && apk add --no-cache --virtual temp-pkgs \
     musl-dev \
     zlib-dev \
     make \
